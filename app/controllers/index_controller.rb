@@ -9,7 +9,7 @@ class IndexController < ApplicationController
     # use it like this:
     # var duh
     # $.getJSON('http://localhost:3000/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0?callback=?',function(data){ console.log(data); duh=data });
-
+ # https://pure-brushlands-4880.herokuapp.com/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0
     # 
     # params = {}; params['id'] = "1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0"
     url = 'https://docs.google.com/spreadsheets/d/' + params['id'] + '/export?format=csv&gid=0'
@@ -33,7 +33,7 @@ puts "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \n"
       next if i == 0
       coordinates = []
       # puts data[i]
-      coordinates << [data[i][3].to_f, data[i][2].to_f]
+      coordinates << data[i][3].to_f, data[i][2].to_f
       # row.each do |cell|
         # puts cell
         features << {
