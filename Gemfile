@@ -43,3 +43,8 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'google_drive'
+gem 'httparty'
+gem 'orderedhash'
+gem 'csv2json'
+gem 'rgeo'
+gem 'rgeo-geojson'
