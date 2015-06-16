@@ -42,8 +42,14 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+# to do the google_drive api stuff
 gem 'google_drive'
-gem 'httparty'
+gem 'google-api-client'
+gem 'google-oauth2-installed'
+gem 'dotenv'
+
+# hash manipultin
 gem 'orderedhash'
 gem 'csv2json'
 # gem 'rgeo'

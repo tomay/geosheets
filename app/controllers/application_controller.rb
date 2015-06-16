@@ -6,4 +6,7 @@ class ApplicationController < ActionController::Base
 	# protect_from_forgery :except => 'index#getsheets'
 	# protect_from_forgery :except => :sheets
 
+ 
+
+
 end
