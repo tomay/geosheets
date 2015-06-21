@@ -23,10 +23,6 @@ class SheetsController < ApplicationController
 
 
 	def map
-
-		puts params
-		puts 'awefaefa'
-		puts request.original_url 
 		# get GoogleDrive session
 		session = Rails.configuration.session
 		data = session.spreadsheet_by_key(params['id']).worksheets[0].rows
