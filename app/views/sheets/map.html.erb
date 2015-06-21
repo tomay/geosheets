@@ -26,9 +26,15 @@
 		}).addTo(map);
 
 		var geojson = <%= raw(@geojson.to_json) %>
-		var layer = L.geoJson(geojson); 
+		var layer = L.geoJson(geojson, {
+			onEachFeature: onEachFeature
+		}); 
 		layer.addTo(map);
 		map.fitBounds(layer.getBounds());
+
+		function onEachFeature(feature, layer) {
+			layer.bindPopup('I"m a popup')
+		}
 
 	</script>
 
