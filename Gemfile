@@ -54,3 +54,5 @@ gem 'orderedhash'
 gem 'csv2json'
 # gem 'rgeo'
 # gem 'rgeo-geojson'
+
+ruby '2.1.5'
