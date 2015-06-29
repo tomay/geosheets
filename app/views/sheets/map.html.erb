@@ -33,7 +33,22 @@
 		map.fitBounds(layer.getBounds());
 
 		function onEachFeature(feature, layer) {
-			layer.bindPopup('I"m a popup')
+			// get feature properties keys
+			var keys = Object.keys(feature.properties);
+			// iterate each key and construct html 
+			// $.each()
+			// for each (var key in keys) {
+			// 	feature.properties.key; 
+			// }
+			// layer.bindPopup('I"m a popup')
+			var html = '';
+			for (i = 0; i < keys.length; i++) {
+				// debugger;
+				var prop = keys[i];
+                html += '<b>' + prop + ':</b> ' + feature.properties[prop] + '<br>';
+
+			}
+			layer.bindPopup(html);
 		}
 
 	</script>

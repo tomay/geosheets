@@ -55,4 +55,6 @@ gem 'csv2json'
 # gem 'rgeo'
 # gem 'rgeo-geojson'
 
-ruby '2.1.5'
+# wkt parsin'; never mind, no polys yet
+# gem 'wktparser', :git => 'git://github.com/esripdx/wktparser-ruby.git'
+# ruby '2.1.5', 
