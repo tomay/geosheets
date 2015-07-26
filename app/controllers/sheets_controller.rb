@@ -1,27 +1,7 @@
 class SheetsController < ApplicationController
 
-	# 1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0
-	# data = session.spreadsheet_by_key('1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0').worksheets[0]
-
-	# call like this 
-	# localhost:3000/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0
-
-
-	# skip_before_action :verify_authenticity_token
-
-	# def getjson
-	# 	render :json => response.to_json, :callback => params['callback']
-	# end
-	
-	# def getmap
-	# 	return getjson if !request.original_url.split('/').last 
-	# 	puts 'ab ab ab'
-	# 	puts params
- #        puts 'hi'
- #        # render 'map'
-	# end
-
-
+	# example:  https://pure-brushlands-4880.herokuapp.com/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0/map
+    # 			https://pure-brushlands-4880.herokuapp.com/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0
 	def map
 
 		sheet = Sheet.new
@@ -30,7 +10,7 @@ class SheetsController < ApplicationController
 		# return geojson
 		@geojson = sheet.geojson(rows)
 
-		# return wkt
+		# TO DO: return wkt
 		# @wkt = sheet.wkt(rows)
 
 		# render the map, or return geojson
@@ -38,9 +18,5 @@ class SheetsController < ApplicationController
 		render request.original_url.split('/').last == 'map' ? 'map' : :json => @geojson
 
 	end
-
-	    # render :json => geojson, :callback => params[:callback]
-
-
 
 end
