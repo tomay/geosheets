@@ -2,7 +2,9 @@
 
 An app to generate [geojson](http://geojson.org/), or a simple Leaflet map, from public Google Drive spreadsheets. 
 
-Here is a [demo](https://pure-brushlands-4880.herokuapp.com/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0/map), which draws data from [this Google Drive spreadsheet](https://docs.google.com/spreadsheets/d/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0/edit#gid=0).
+Here is a [demo, returning a map](https://pure-brushlands-4880.herokuapp.com/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0/map), which draws data from [this Google Drive spreadsheet](https://docs.google.com/spreadsheets/d/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0/edit#gid=0).
+
+Here is the same sheet, [returning geojson](https://pure-brushlands-4880.herokuapp.com/sheets/1lGzP8DrVZKqh-RuocHe-n2wsbZxN0vCzVsAYRys-6b0)
 
 ##How it works
 
